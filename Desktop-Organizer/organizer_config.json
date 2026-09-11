@@ -1,0 +1,36 @@
+{
+    "Resimler": [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".gif",
+        ".bmp",
+        ".tiff",
+        ".webp"
+    ],
+    "Belgeler": [
+        ".pdf",
+        ".doc",
+        ".docx",
+        ".txt",
+        ".xls",
+        ".xlsx",
+        ".ppt",
+        ".pptx",
+        ".csv",
+        ".rtf"
+    ],
+    "Videolar": [
+        ".mp4",
+        ".avi",
+        ".mkv",
+        ".mov",
+        ".wmv",
+        ".flv",
+        ".webm",
+        ".mpeg"
+    ],
+    "Exeler": [
+        ".exe"
+    ]
+}

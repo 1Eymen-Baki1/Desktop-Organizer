@@ -1,0 +1,101 @@
+🖥️ Masaüstü Organizörü - EXE Oluşturma Kılavuzu
+==================================================
+
+Bu kılavuz, Python masaüstü organizörü uygulamanızı (desktop_organizer.py)
+tek bir .exe dosyasına dönüştürerek Python kurulu olmayan herkesin
+kullanabilmesini sağlar.
+
+--------------------------------------------------------------------
+📋 Ön Koşullar
+--------------------------------------------------------------------
+1. Python 3.6 veya üstü yüklü olmalıdır.
+   - Kontrol: `python --version` veya `python3 --version`
+2. İnternet bağlantısı (PyInstaller paketini indirmek için)
+
+--------------------------------------------------------------------
+🔧 Adım 1: PyInstaller'ı Yükleyin
+--------------------------------------------------------------------
+Komut İstemi (PowerShell veya CMD)を開いて şu komutu çalıştırın:
+
+```bash
+pip install pyinstaller
+```
+veya
+```bash
+python -m pip install pyinstaller
+```
+
+--------------------------------------------------------------------
+📦 Adım 2: Uygulamanızın Klasörüne Girin
+--------------------------------------------------------------------
+Uygulama dosyanızın bulunduğu klasöre gidin:
+```bash
+cd C:\Users\alpo-\Desktop\Resulitouns
+```
+
+--------------------------------------------------------------------
+⚙️ Adım 3: EXE Oluşturma Komutunu Çalıştırın
+--------------------------------------------------------------------
+Tek bir dosyalı, pencereli (console gözükmüyor) EXE oluşturmak için:
+
+```bash
+pyinstaller --onefile --windowed desktop_organizer.py
+```
+
+**Açıklamalar:**
+- `--onefile`: Tüm bağımlılıkları tek bir exe içinde toplar.
+- `--windowed`: Konsol penceresi göstermez (sadece GUI görünür).
+- Eğer konsol penceresi de görmek isterseniz, `--windowed` yerine `--console` kullanın.
+
+--------------------------------------------------------------------
+📂 Adım 4: Oluşan EXE Dosyasını Bulun
+--------------------------------------------------------------------
+İşlem tamamlandıktan sonra:
+- `dist` klasörü oluşturulur.
+- İçinde `desktop_organizer.exe` dosyası bulunur.
+- Bu exe dosyasını istediğiniz şekilde kopyalayabilir, paylaşabilir veya
+  direkt çalıştırabilirsiniz.
+
+--------------------------------------------------------------------
+⚠️ Önemli Notlar
+--------------------------------------------------------------------
+1. **Antivirus Uyarıları**: Bazı antivirus programları PyInstaller ile oluşturulan
+   exe'leri yanlışlıkla tehdit olarak işaretleyebilir. Bu bir "false positive"
+   (yanlış alarm) olup, kaynak kodumuz zararlı değil. Güvenliğinizi sağlamak
+   için exe'yi virüs total gibi servislere yükleyebilirsiniz.
+2. **Dosya Boyutu**: Tek dosyalı exe yaklaşık 10-15 MB boyutunda olacaktır.
+3. **Güncellemeler**: Uygulamada değişiklik yaparsanız, exe'yi yeniden
+   oluşturmanız gerekir.
+4. **Lisans**: Bu uygulama kişisel ve eğitim amaçlı ücretsiz olarak sağlanmaktadır.
+   Ticari dağıtım veya değişiklik yapmadan önce lisans koşullarını kontrol edin.
+
+--------------------------------------------------------------------
+🚀 EXE'yi Kullanma
+--------------------------------------------------------------------
+1. `desktop_organizer.exe` dosyasını çift tıklayarak çalıştırın.
+2. İlk çalıştırmada Windows SmartScreen uyarısı verebilir;
+   "More info" → "Run anyway" seçeneği ile geçebilirsiniz.
+3. Uygulama açıldığında "Masaüstüyi Organize Et" butonuna tıklayın.
+4. İstediğiniz zaman "Özel Kategori Ekle" ile kendi kategorilerinizi tanımlayın.
+
+--------------------------------------------------------------------
+❓ Sorun Giderme
+--------------------------------------------------------------------
+- **"Python not found" hatası**: Python'un PATH değişkenine eklenmediği
+  anlamına gelir. Python kurulumunu yeniden yapıp "Add Python to PATH"
+  seçeneğini işaretleyin.
+- **Modül eksik hatası**: PyInstaller'ın tüm modülleri tespit edemediği
+  durumda, `pyinstaller --onefile --windowed --hidden-import=tkinter desktop_organizer.py`
+  gibi ek parametreler deneyebilirsiniz.
+- **EXE çalışmaz**: Çıktıyı terminalden görmek için `--windowed` yerine
+  `--console` kullanıp exe'yi komut isteminden çalıştırın, hata mesajlarını
+  görebilirsiniz.
+
+--------------------------------------------------------------------
+📞 Destek
+--------------------------------------------------------------------
+Herhangi bir sorun yaşarsanız veya uygulama hakkında daha fazla özellik
+istemiyorsanız, lütfen belirtin. İyi çalışmalar!
+
+--------------------------------------------------------------------
+Created by Claude Code - 2026-09-12
