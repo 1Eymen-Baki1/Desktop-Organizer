@@ -69,3 +69,4 @@ For any issues, suggestions, or contributions, please open an issue.
 Made with ❤️ by Claude Code
 
 YOU CAN FİND .EXE FİLE İN THE DİST 
+WARNİNG : !!!! Since it is an .exe file, it might be flagged as a virus, but don't worry—there is no virus.
