@@ -35,7 +35,7 @@ A simple GUI application developed with Python that automatically organizes file
    ```
 4. Click the "Organize Desktop" button in the application.
 
-### As EXE (for Distribution)
+### As EXE (for Distribution) RECOMMEND
 
 1. Download `dist\desktop_organizer.exe`.
 2. Double-click to run (you may see a Windows SmartScreen warning; click "More info" → "Run anyway").
@@ -67,3 +67,5 @@ For any issues, suggestions, or contributions, please open an issue.
 ---
 
 Made with ❤️ by Claude Code
+
+YOU CAN FİND .EXE FİLE İN THE DİST 
